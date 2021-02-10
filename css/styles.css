@@ -1,0 +1,768 @@
+@font-face {
+    font-family: 'josefinsans-bold';
+    src: url('../fonts/josefinsans-bold-webfont.eot');
+	src: url('../fonts/josefinsans-bold-webfont.eot?iefix') format('eot'),
+	     url('../fonts/josefinsans-bold-webfont.woff') format('woff'),
+	     url('../fonts/josefinsans-bold-webfont.ttf') format('truetype'),
+	     url('../fonts/josefinsans-bold-webfont.svg#webfont') format('svg');
+}
+@font-face {
+    font-family: 'josefinsans-bolditalic';
+    src: url('../fonts/josefinsans-bolditalic-webfont.eot');
+	src: url('../fonts/josefinsans-bolditalic-webfont.eot?iefix') format('eot'),
+	     url('../fonts/josefinsans-bolditalic-webfont.woff') format('woff'),
+	     url('../fonts/josefinsans-bolditalic-webfont.ttf') format('truetype'),
+	     url('../fonts/josefinsans-bolditalic-webfont.svg#webfont') format('svg');
+}
+@font-face {
+    font-family: 'josefinsans-semibold';
+    src: url('../fonts/josefinsans-semibold-webfont.eot');
+	src: url('../fonts/josefinsans-semibold-webfont.eot?iefix') format('eot'),
+	     url('../fonts/josefinsans-semibold-webfont.woff') format('woff'),
+	     url('../fonts/josefinsans-semibold-webfont.ttf') format('truetype'),
+	     url('../fonts/josefinsans-semibold-webfont.svg#webfont') format('svg');
+}
+@font-face {
+    font-family: 'josefinsans-regular';
+    src: url('../fonts/josefinsans-regular-webfont.eot');
+	src: url('../fonts/josefinsans-regular-webfont.eot?iefix') format('eot'),
+	     url('../fonts/josefinsans-regular-webfont.woff') format('woff'),
+	     url('../fonts/josefinsans-regular-webfont.ttf') format('truetype'),
+	     url('../fonts/josefinsans-regular-webfont.svg#webfont') format('svg');
+}
+@font-face {
+    font-family: 'josefinsans-light';
+    src: url('../fonts/josefinsans-light-webfont.eot');
+	src: url('../fonts/josefinsans-light-webfont.eot?iefix') format('eot'),
+	     url('../fonts/josefinsans-light-webfont.woff') format('woff'),
+	     url('../fonts/josefinsans-light-webfont.ttf') format('truetype'),
+	     url('../fonts/josefinsans-light-webfont.svg#webfont') format('svg');
+}
+@font-face {
+    font-family: 'Aileron-Black';
+    src: url('../fonts/Aileron-Black-webfont.eot');
+	src: url('../fonts/Aileron-Black-webfont.eot?iefix') format('eot'),
+	     url('../fonts/Aileron-Black-webfont.woff') format('woff'),
+	     url('../fonts/Aileron-Black-webfont.ttf') format('truetype'),
+	     url('../fonts/Aileron-Black-webfont.svg#webfont') format('svg');
+}
+@font-face {
+    font-family: 'Aileron-Bold';
+    src: url('../fonts/Aileron-Bold-webfont.eot');
+	src: url('../fonts/Aileron-Bold-webfont.eot?iefix') format('eot'),
+	     url('../fonts/Aileron-Bold-webfont.woff') format('woff'),
+	     url('../fonts/Aileron-Bold-webfont.ttf') format('truetype'),
+	     url('../fonts/Aileron-Bold-webfont.svg#webfont') format('svg');
+}
+@font-face {
+    font-family: 'Aileron-SemiBold';
+    src: url('../fonts/Aileron-SemiBold-webfont.eot');
+	src: url('../fonts/Aileron-SemiBold-webfont.eot?iefix') format('eot'),
+	     url('../fonts/Aileron-SemiBold-webfont.woff') format('woff'),
+	     url('../fonts/Aileron-SemiBold-webfont.ttf') format('truetype'),
+	     url('../fonts/Aileron-SemiBold-webfont.svg#webfont') format('svg');
+}
+@font-face {
+    font-family: 'Aileron-Regular';
+    src: url('../fonts/Aileron-Regular-webfont.eot');
+	src: url('../fonts/Aileron-Regular-webfont.eot?iefix') format('eot'),
+	     url('../fonts/Aileron-Regular-webfont.woff') format('woff'),
+	     url('../fonts/Aileron-Regular-webfont.ttf') format('truetype'),
+	     url('../fonts/Aileron-Regular-webfont.svg#webfont') format('svg');
+}
+@font-face {
+    font-family: 'Aileron-Light';
+    src: url('../fonts/Aileron-Light-webfont.eot');
+	src: url('../fonts/Aileron-Light-webfont.eot?iefix') format('eot'),
+	     url('../fonts/Aileron-Light-webfont.woff') format('woff'),
+	     url('../fonts/Aileron-Light-webfont.ttf') format('truetype'),
+	     url('../fonts/Aileron-Light-webfont.svg#webfont') format('svg');
+}
+
+
+
+/* GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+body {
+	font-family: 'Aileron-Light';
+	padding-top: 60px;
+	background: #0d0f1e;
+}
+.container {
+	max-width: 978px;
+	margin: 0 auto;
+	padding: 200px 84px;
+}
+.background-container {
+	position: relative;
+/*	height: 1345px;
+*/	max-width: 978px;
+	margin: 0 auto;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+	table-layout: fixed;
+	float: none !important;
+}
+.row {
+	display: table-row;
+}
+.column {
+	display: table-column;
+}
+.cell {
+	display: table-cell;
+	vertical-align: middle;
+	float: none !important;
+}
+h1 {
+	font-family: 'josefinsans-bold';
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 50px;
+	line-height: 60px;
+	margin-bottom: 20px;
+}
+h1 span {
+	font-family: 'josefinsans-light';
+}
+h2 {
+	font-family: 'josefinsans-bold';
+	text-transform: uppercase;
+	font-size: 35px;
+	color: #0d0f1e;
+	margin-bottom: 30px;
+}
+h2 span {
+	font-family: 'josefinsans-light';
+}
+h3 {
+	font-family: 'josefinsans-bold';
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #56c2aa;
+	margin-bottom: 50px;
+}
+h4 {
+	font-family: 'josefinsans-semibold';
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #0d0f1e;
+	margin-bottom: 30px;
+}
+h5 {
+	font-family: 'Aileron-SemiBold';
+	font-size: 18px;
+	color: #0d0f1e;
+	margin-bottom: 10px;
+}
+p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #0d0f1e;
+	margin-bottom: 30px;
+}
+p > strong {
+	font-family: 'Aileron-Regular';
+}
+p > a {
+	font-size: 14px;
+}
+a {
+	font-size: 16px;
+	text-decoration: underline;
+	color: #0d0f1e;
+	-webkit-transition: color .25s ease-in-out;
+ 	-moz-transition: color .25s ease-in-out;
+ 	-o-transition: color .25s ease-in-out;
+ 	transition: color .25s ease-in-out;
+}
+a:hover {
+	color: #56c2aa;
+}
+.btn {
+	color: #0d0f1e;
+	background-color: #56c2aa;
+	display: inline-block;
+	font-family: 'josefinsans-regular';
+	font-size: 18px;
+	line-height: 22px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	padding: 12px 30px 10px;
+	border: none;
+	margin: 10px 0;
+	cursor: pointer;
+	-webkit-transition: background-color .25s ease-in-out;
+ 	-moz-transition: background-color .25s ease-in-out;
+ 	-o-transition: background-color .25s ease-in-out;
+ 	transition: background-color .25s ease-in-out;
+}
+.btn:hover {
+	background-color: #fff;
+	color: #0d0f1e;
+	border: 3px solid #56c2aa;
+	padding: 9px 27px 7px;
+	-webkit-transition: background-color .25s ease-in-out;
+ 	-moz-transition: background-color .25s ease-in-out;
+ 	-o-transition: background-color .25s ease-in-out;
+ 	transition: background-color .25s ease-in-out;
+}
+em {
+	font-style: italic;
+}
+/* NAVIGATION */
+.top {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	background-color: rgba(13,15,30,0.7);
+	z-index: 999;
+}
+nav {
+	max-width: 978px;
+	margin: 0 auto;
+	text-align: center;
+}
+nav > .container {
+	padding: 0 84px;
+	display: flex;
+	justify-content: space-between;
+}
+nav a,
+#side-nav a {
+	font-family: 'josefinsans-regular';
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 60px;
+	color: #fff;
+	text-align: center;
+}
+nav a:hover {
+	color: #56c2aa;
+	-webkit-transition: color .25s ease-in-out;
+ 	-moz-transition: color .25s ease-in-out;
+ 	-o-transition: color .25s ease-in-out;
+ 	transition: color .25s ease-in-out;
+}
+.has-child {
+	position: relative;
+}
+.has-child .sub-nav {
+	opacity: 0;
+	visibility: hidden;
+	background: #0d0e1e;
+	padding: 10px 20px;
+	position: absolute;
+	top: 60px;
+	left: -195%;
+	width: 245px;
+}
+.has-child .sub-nav li a {
+	text-align: left;
+	font-size: 16px;
+}
+.has-child:hover .sub-nav {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* SIDEBAR NAV */
+#side-nav,
+.closebtn,
+.hide-show-nav {
+	display: none;
+}
+
+
+/* BANNER */
+.banner {
+	background: url(../images/site/homepage-banner.jpg) no-repeat top left;
+	background-size: cover;
+	height: 829px;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+.banner:before {
+	content: "";
+	background: rgb(13,15,30);
+	background: linear-gradient(0deg, rgba(13,15,30,1) 0%, rgba(13,15,30,0.80) 25%, rgba(13,15,30,0.5) 100%);
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.banner .banner-box {
+	max-width: 978px;
+	margin: 0 auto;
+}
+.banner .container {
+	max-width: 726px;
+	position: absolute;
+	top: 0;
+	z-index: 9;
+	padding: 100px 84px;
+}
+.banner p {
+	color: #fff;
+	margin-bottom: 20px;
+}
+.banner .titles {
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 25px;
+}
+.banner .titles {
+	list-style: none;
+	margin-bottom: 20px;
+}
+.banner .titles li {
+	color: #fff;
+	display: inline;
+    padding: 0 10px;
+    border-left: solid 2px #56c2aa;
+}
+.banner .titles li:first-child { 
+    border-left: none;
+    padding: 0 10px 0 0;
+ }
+.title {
+/*	width: 978px;
+*/	margin: 0 auto;
+	padding: 50px 0 0 84px;
+}
+.intro-text {
+	max-width: 390px;
+	padding-right: 30px;
+}
+
+#about,
+#contact,
+.sub-work,
+.footer {
+	max-width: 978px;
+	margin: 0 auto;
+}
+
+
+/* ABOUT */
+#about {
+	background-color: #fff;
+	position: relative;
+}
+.about-intro {
+	padding-bottom: 100px;
+}
+.headshot {
+	background: url(../images/pages/headshot.jpg) no-repeat center bottom;
+	background-size: cover;
+	width: 390px;
+	height: 488px;
+	position: absolute;
+	top: -55px;
+	right: 84px;
+
+}
+.two-column {
+	width: 50%;
+	vertical-align: top;
+}
+
+/* WORK */
+.right-column-work {
+	position: absolute;
+	top: -55px;
+	right: 84px;
+}
+.left-column-work {
+	margin-right: 30px;
+}
+.mobile-row-work {
+	display: none;
+}
+#work {
+	background-color: #56c2aa;
+	height: 1306px;
+	max-width: 100%;
+}
+.work-box {
+	position: relative;
+	width: 390px;
+	height: 488px;
+	display: block;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+}
+.work-box.show-text:before {
+	opacity: 1;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(13,15,30,0.8);
+	display: block;
+	transition: width .25s, height .25s;
+}
+.work-box:before {
+	opacity: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(13,15,30,0.8);
+	-webkit-transition: opacity 0.25s ease-out, background-color 0.25s ease;
+	-moz-transition: opacity 0.25s ease-out, background-color 0.25s ease;
+	-o-transition: opacity 0.25s ease-out, background-color 0.25s ease;
+	transition: opacity 0.25s ease-out, background-color 0.25s ease;
+}
+.work-box .content-box {
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	width: 220px;
+	-webkit-transition: opacity 0.25s ease-out, background-color 0.25s ease;
+	-moz-transition: opacity 0.25s ease-out, background-color 0.25s ease;
+	-o-transition: opacity 0.25s ease-out, background-color 0.25s ease;
+	transition: opacity 0.25s ease-out, background-color 0.25s ease;
+}
+.work-box.show-text .content-box {
+	opacity: 1;
+	display: block;
+	position: absolute;
+	text-align: center;
+	width: 220px;
+	margin-top: 60px;
+	-webkit-transition: top 0.25s ease-out, margin-top 0.25s ease;
+	-moz-transition: top 0.25s ease-out, margin-top 0.25s ease;
+	-o-transition: top 0.25s ease-out, margin-top 0.25s ease;
+	transition: top 0.25s ease-out, margin-top 0.25s ease;
+}
+.work-box .content-box h4,
+.work-box .content-box p {
+	color: #fff;
+}
+.work-box .content-box p {
+	margin-bottom: 20px;
+}
+.work-box .content-box a {
+	opacity: 0;
+	-webkit-transition: opacity 0.25s ease-out, background-color 0.25s ease;
+	-moz-transition: opacity 0.25s ease-out, background-color 0.25s ease;
+	-o-transition: opacity 0.25s ease-out, background-color 0.25s ease;
+	transition: opacity 0.25s ease-out, background-color 0.25s ease;
+
+}
+.work-box:hover:before {
+	opacity: 1;
+}
+.work-box:hover .content-box {
+	opacity: 1;
+}
+.work-box:hover .content-box a {
+	opacity: 1;
+}
+.work-box.show-text:hover .content-box {
+	margin-top: 0px;
+}
+.work-box.show-text:hover a {
+	opacity: 1;
+}
+.work-box.web-development {
+	background: url(../images/site/work-web-development.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.digital-marketing {
+	background: url(../images/site/work-digital-marketing.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.graphic-design {
+	background: url(../images/site/work-graphic-design.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.fine-arts {
+	background: url(../images/site/work-fine-art-1.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+/* CONTACT */
+#contact {
+	background-color: #fff;
+}
+#contact .container {
+	padding: 200px 84px 100px;
+}
+#contact .cell {
+	vertical-align: top;
+}
+#contact .intro-text {
+	padding-right: 84px;
+}
+#contact .intro-text a {
+	text-decoration: none;
+}
+.contact-form {
+	width: 390px;
+}
+.contact-info {
+	width: 306px;
+}
+.contact-info p a {
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+.social-email:before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	background: url(../images/icons/icon-email.png) no-repeat center center;
+	background-size: contain;
+	display: table-cell;
+}
+.social-linkedin:before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	background: url(../images/icons/icon-linkedin.png) no-repeat center center;
+	background-size: contain;
+	display: table-cell;
+}
+.social-email a,
+.social-linkedin a {
+	padding-left: 15px;
+	display: table-cell;
+}
+
+
+
+
+
+/* SUB PAGES */
+.sub-banner {
+	height: 300px;
+}
+.sub-banner .container {
+	padding: 110px 84px;
+}
+.sub-work {
+	background-color: #fff;
+}
+.sub-work .background-container {
+	height: 906px;
+}
+.sub-work .background-container .container {
+	padding: 200px 84px 0px;
+}
+.sub-work .work-box a {
+	left: 104px;
+}
+
+.footer.sub-footer .container {
+	padding: 100px 84px 50px;
+}
+
+.webd-banner {
+	background: url(../images/site/banner-sub-web-development.jpg) no-repeat top right;
+}
+.digitmark-banner {
+	background: url(../images/site/banner-sub-digital-marketing.jpg) no-repeat top center;
+}
+.gd-banner {
+	background: url(../images/site/banner-sub-graphic-design.jpg) no-repeat top left;
+}
+.finearts-banner {
+	background: url(../images/site/banner-sub-fine-arts.jpg) no-repeat top left;
+}
+
+/* WEB DEVELOPMENT */
+.webd-work .background-container {
+	height: 906px;
+}
+.work-box.ten-principles {
+	background: url(../images/pages/web-development/work-website-ten-principles.jpg) no-repeat center top;
+	background-size: cover;
+}
+.work-box.post-modernism {
+	background: url(../images/pages/web-development/work-website-post-modernism.jpg) no-repeat left center;
+	background-size: cover;
+}
+/*.work-box.mckinley-money {
+	background: url(../images/pages/web-development/work-website-post-modernism.jpg) no-repeat center center;
+	background-size: cover;
+}*/
+.work-box.personal-portfolio {
+	background: url(../images/pages/web-development/work-website-portfolio.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+/* DIGITAL MARKETING */
+.digitmark-work .background-container {
+	height: 850px;
+}
+.work-box.fcrst {
+	background: url(../images/pages/digital-marketing/work-digital-marketing-fcrst-seo-audit.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.study-abroad {
+	background: url(../images/pages/digital-marketing/work-digital-marketing-study-abroad-report.jpg) no-repeat center center;
+}
+
+/* GRAPHIC DESIGN */
+.gd-work .background-container {
+	height: 1940px;
+}
+.work-box.elephant-garlic {
+	background: url(../images/pages/graphic-design/graphic-design-II-elephant-garlic-1.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.struttin {
+	background: url(../images/pages/graphic-design/graphic-design-II-struttin-brand-logo.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.biology-symbol {
+	background: url(../images/pages/graphic-design/graphic-design-I-symbol-biology.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.social-issue {
+	background: url(../images/pages/graphic-design/graphic-design-II-social-problems-poster-main.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.gala-flyer {
+	background: url(../images/pages/graphic-design/graphic-design-I-project-3-flyer.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.street-art {
+	background: url(../images/pages/graphic-design/graphic-design-I-street-art-poster.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.line-dot {
+	background: url(../images/pages/graphic-design/graphic-design-I-line-dot-main.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+/* FINE ARTS */
+.finearts-work .background-container {
+	height: 2870px;
+}
+.work-box.fashion-without {
+	background: url(../images/site/work-fine-art-1.jpg) no-repeat top center;
+	background-size: cover;
+}
+.work-box.love-life {
+	background: url(../images/pages/fine-arts/2d-design-project-2.jpg) no-repeat top center;
+	background-size: cover;
+}
+.work-box.black-panther {
+	background: url(../images/pages/fine-arts/design-concepts-black-panther-1.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.alcoholism-mirror {
+	background: url(../images/pages/fine-arts/drawing-II-project-5.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.paper-lady {
+	background: url(../images/pages/fine-arts/drawing-II-project-4.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.garlic-paper {
+	background: url(../images/pages/fine-arts/drawing-II-project-3-main.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.still-life {
+	background: url(../images/pages/fine-arts/drawing-II-project-1.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.blur-charcoal {
+	background: url(../images/pages/fine-arts/drawing-I-project-5.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.gourd-drawing {
+	background: url(../images/pages/fine-arts/drawing-I-project-4.jpg) no-repeat center center;
+	background-size: cover;
+}
+.work-box.low-poly {
+	background: url(../images/pages/fine-arts/drawing-I-project-3.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+
+
+
+/* FOOTER */
+.footer .container {
+	padding: 50px 84px;
+}
+.footer p {
+	text-align: right;
+	color: #fff;
+	width: 306px;
+	padding-left: 30px;
+}
+.footer p > a {
+	font-size: 14px;
+	color: #56c2aa;
+}
+.footer p > a:hover {
+	color: #fff;
+}
+.footer-nav {
+	width: 474px;
+}
+.footer-nav a {
+	font-family: 'josefinsans-regular';
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+}
+.footer-nav a:hover {
+	color: #56c2aa;
+	-webkit-transition: color .25s ease-in-out;
+ 	-moz-transition: color .25s ease-in-out;
+ 	-o-transition: color .25s ease-in-out;
+ 	transition: color .25s ease-in-out;
+}
+.footer-nav a+a {
+	margin-left: 34px;
+}
+.footer-nav .btn,
+.footer-nav .btn:hover {
+	margin: 0 0 0 34px;
+	color: #0d0f1e;
+	-webkit-transition: background-color .25s ease-in-out;
+ 	-moz-transition: background-color .25s ease-in-out;
+ 	-o-transition: background-color .25s ease-in-out;
+ 	transition: background-color .25s ease-in-out;
+}
+.social-footer {
+	width: 60px;
+	float: right;
+}
+.social-footer .social-email {
+	margin-right: 10px;
+}
+.social-footer .social-email:before {
+	width: 24px;
+	height: 21px;
+}
+.social-footer .social-linkedin:before {
+	height: 20px;
+}
+
+
+
+
+
+
+
+
+

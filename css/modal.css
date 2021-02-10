@@ -1,0 +1,593 @@
+.modal {
+  display: flex;
+  opacity: 0;
+  position: fixed;
+  background: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  right: 0;
+  z-index: 9000;
+  overflow: auto;
+  visibility: hidden;
+  transition: all .35s;
+}
+
+
+.modal:target {
+  background: rgba(0, 0, 0, 0.5);
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+.modal-open {
+  background: rgba(0, 0, 0, 0.5);
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+.modal-content {
+  width: 978px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.small-modal-container .modal-text {
+  padding: 54px;
+}
+.modal-body {
+  overflow: auto;
+  width: 813px;
+/*  height: 608px;
+*/  margin: 0 auto;
+  background: #fff;
+}
+.modal-slick .modal-text {
+  padding: 84px;
+}
+.modal-text h2 {
+  font-size: 30px;
+}
+.modal-text h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.modal-text h3 span {
+  font-size: 16px;
+  font-family: 'josefinsans-bolditalic';
+}
+.modal-text p {
+  margin-bottom: 15px;
+}
+.modal-text .btn {
+  font-size: 14px;
+}
+.modal-close-icon {
+  background-image: url(../images/icons/close-icon-stroke.png);
+  background-repeat: no-repeat;
+  background-position: left -30px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  /*margin: 30px;*/
+/*  float: right;*/
+  /*position: absolute;*/
+  /*right: 40px;
+  top: -43px;*/
+  cursor: pointer;
+  -webkit-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+
+  right: -15px;
+  top: -16px;
+  margin: 0;
+  z-index: 9;
+  position: absolute;
+}
+.modal-close-icon:before {
+  content: "";
+  background-image: url(../images/icons/close-icon-stroke.png);
+  width: 30px;
+  height: 30px;
+  background-position: left 0px;
+  background-repeat: no-repeat;
+  display: block;
+  float: right;
+}
+.modal-close-icon:hover:before {
+  opacity: 0;
+  -webkit-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+
+
+
+.modal-image {
+  height: 256px;
+  width: 578px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 316px;
+  bottom: -30px;
+}
+.modal-image .btn {
+  margin: 190px 30px;
+  float: right;
+}
+
+#job-desc-modal .modal-text p + p {
+  margin-bottom: 50px;
+}
+
+.small-modal-container .modal-close-icon {
+  margin: 30px;
+  right: 40px;
+  top: -43px;
+}
+
+/* SLICK MODALS */
+.modal-container {
+  width: 100%;
+  max-width: 978px;
+  height: 600px;
+  position: relative;
+  top: -41px;
+  margin: 0 auto;
+}
+.modal-slick .modal-content {
+  background: #fff;
+  flex-direction: row;
+  padding: 54px;
+  width: 870px;
+  position: absolute;
+}
+#job-desc-modal .modal-content {
+  padding: 65px;
+  background: #fff;
+  flex-direction: row;
+  width: 870px;
+  position: absolute;
+}
+#job-desc-modal .modal-body {
+  padding-right: 20px;
+}
+/*.modal-slick .modal-body {
+  width: 513px;
+}*/
+.modal-slick .modal-img {
+  width: 470px;
+  height: 600px;
+  padding: 0 20px;
+}
+.modal-slick .modal-body {
+  width: 336px;
+  margin-left: 30px;
+}
+.modal-slick .modal-text {
+  padding: 0;
+}
+
+/*.modal-slick .modal-close-icon,
+#job-desc-modal .modal-close-icon {
+  right: -15px;
+  top: -16px;
+  margin: 0;
+  z-index: 9;
+  position: absolute;
+}*/
+.modal-img div {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  width: 470px;
+}
+
+.modal-slick {
+  overflow: auto;
+}
+
+
+/* GRAPHIC DESIGN MODAL IMAGES */
+
+.social-issue-img-1 {
+  background-image: url(../images/pages/graphic-design/graphic-design-II-social-problems-poster-1.jpg);
+}
+.social-issue-img-2 {
+  background-image: url(../images/pages/graphic-design/graphic-design-II-social-problems-poster-2.jpg);
+}
+.social-issue-img-3 {
+  background-image: url(../images/pages/graphic-design/graphic-design-II-social-problems-poster-3.jpg);
+}
+.social-issue-img-4 {
+  background-image: url(../images/pages/graphic-design/graphic-design-II-social-problems-poster-4.jpg);
+}
+
+.street-art-modal .modal-img {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-street-art-poster.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.elephant-garlic-img-1 {
+  background-image: url(../images/pages/graphic-design/graphic-design-II-elephant-garlic-1.jpg);
+}
+.elephant-garlic-img-2 {
+  background-image: url(../images/pages/graphic-design/graphic-design-II-elephant-garlic-2.jpg);
+}
+.elephant-garlic-img-3 {
+  background-image: url(../images/pages/graphic-design/graphic-design-II-elephant-garlic-3.jpg);
+}
+.elephant-garlic-img-4 {
+  background-image: url(../images/pages/graphic-design/graphic-design-II-elephant-garlic-4.jpg);
+}
+.elephant-garlic-img-5 {
+  background-image: url(../images/pages/graphic-design/graphic-design-II-elephant-garlic-5.jpg);
+}
+
+.biology-symbol-img-1 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-symbol-1.jpg);
+}
+.biology-symbol-img-2 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-symbol-2.jpg);
+}
+.biology-symbol-img-3 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-symbol-3.jpg);
+}
+.biology-symbol-img-4 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-symbol-4.jpg);
+}
+.biology-symbol-img-5 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-symbol-5.jpg);
+}
+
+.gala-flyer-modal .modal-img {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-project-3-flyer.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.line-dot-img-1 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-line-dot-1.jpg);
+}
+.line-dot-img-2 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-line-dot-2.jpg);
+}
+.line-dot-img-3 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-line-dot-3.jpg);
+}
+.line-dot-img-4 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-line-dot-4.jpg);
+}
+.line-dot-img-5 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-line-dot-5.jpg);
+}
+.line-dot-img-6 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-line-dot-6.jpg);
+}
+.line-dot-img-7 {
+  background-image: url(../images/pages/graphic-design/graphic-design-I-line-dot-7.jpg);
+}
+
+
+/* FINE ARTS MODAL IMAGES */
+
+.fashion-without-img-1 {
+  background-image: url(../images/pages/fine-arts/3d-design-project-4-1.jpg);
+}
+.fashion-without-img-2 {
+  background-image: url(../images/pages/fine-arts/3d-design-project-4-2.jpg);
+}
+.fashion-without-img-3 {
+  background-image: url(../images/pages/fine-arts/3d-design-project-4-3.jpg);
+}
+.fashion-without-img-4 {
+  background-image: url(../images/pages/fine-arts/3d-design-project-4-4.jpg);
+}
+.fashion-without-img-5 {
+  background-image: url(../images/pages/fine-arts/3d-design-project-4-5.jpg);
+}
+.fashion-without-img-6 {
+  background-image: url(../images/pages/fine-arts/3d-design-project-4-6.jpg);
+}
+.fashion-without-img-7 {
+  background-image: url(../images/pages/fine-arts/3d-design-project-4-7.jpg);
+}
+.fashion-without-img-8 {
+  background-image: url(../images/pages/fine-arts/3d-design-project-4-8.jpg);
+}
+.fashion-without-img-9 {
+  background-image: url(../images/pages/fine-arts/3d-design-project-4-9.jpg);
+}
+
+.love-life-img-1 {
+  background-image: url(../images/pages/fine-arts/2d-design-project-2.jpg);
+}
+.love-life-img-2 {
+  background-image: url(../images/pages/fine-arts/2d-design-project-2-zoomed.jpg);
+}
+.love-life-img-3 {
+  background-image: url(../images/pages/fine-arts/2d-design-project-2-size.jpg);
+}
+
+.black-panther-img-1 {
+  background-image: url(../images/pages/fine-arts/design-concepts-black-panther-1.jpg);
+}
+.black-panther-img-2 {
+  background-image: url(../images/pages/fine-arts/design-concepts-black-panther-2.jpg);
+}
+.black-panther-img-3 {
+  background-image: url(../images/pages/fine-arts/design-concepts-black-panther-3.jpg);
+}
+.black-panther-img-4 {
+  background-image: url(../images/pages/fine-arts/design-concepts-black-panther-4.jpg);
+}
+.black-panther-img-5 {
+  background-image: url(../images/pages/fine-arts/design-concepts-black-panther-5.jpg);
+}
+
+.alcoholism-mirror-modal .modal-img {
+  background-image: url(../images/pages/fine-arts/drawing-II-project-5.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.paper-lady-img-1 {
+  background-image: url(../images/pages/fine-arts/drawing-II-project-4.jpg);
+}
+.paper-lady-img-2 {
+  background-image: url(../images/pages/fine-arts/drawing-II-project-4-orig.jpg);
+}
+
+.garlic-paper-img-1 {
+  background-image: url(../images/pages/fine-arts/drawing-II-project-3-2.jpg);
+}
+.garlic-paper-img-2 {
+  background-image: url(../images/pages/fine-arts/drawing-II-project-3-1.jpg);
+}
+
+.still-life-modal .modal-img {
+  background-image: url(../images/pages/fine-arts/drawing-II-project-1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.blur-charcoal-img-1 {
+  background-image: url(../images/pages/fine-arts/drawing-I-project-5-1.jpg);
+}
+.blur-charcoal-img-2 {
+  background-image: url(../images/pages/fine-arts/drawing-I-project-5-2.jpg);
+}
+.blur-charcoal-img-3 {
+  background-image: url(../images/pages/fine-arts/drawing-I-project-5-3.jpg);
+}
+.blur-charcoal-img-4 {
+  background-image: url(../images/pages/fine-arts/drawing-I-project-5-4.jpg);
+}
+.blur-charcoal-img-5 {
+  background-image: url(../images/pages/fine-arts/drawing-I-project-5-5.jpg);
+}
+.blur-charcoal-img-6 {
+  background-image: url(../images/pages/fine-arts/drawing-I-project-5-6.jpg);
+}
+
+.gourd-drawing-modal .modal-img {
+  background-image: url(../images/pages/fine-arts/drawing-I-project-4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.low-poly-modal .modal-img {
+  background-image: url(../images/pages/fine-arts/drawing-I-project-3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1055px) {
+  #job-desc-modal .modal-content {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .modal-slick .modal-content {
+    width: 85%;
+  }
+  .modal-slick .modal-img {
+    width: 55%;
+  }
+  .modal-img div {
+    width: 100%;
+  }
+  .slick-prev, .slick-next {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .modal-container {
+    width: 90%;
+  }
+  .modal-close-icon {
+    right: 5px;
+    top: 5px;
+  }
+  .small-modal-container .modal-close-icon {
+    right: 87px;
+    top: 5px;
+    margin: 0;
+    z-index: 9;
+    position: absolute;
+  }
+}
+
+@media (max-width: 890px) {
+/*  .modal-slick .modal-text {
+    padding: 54px;
+  }*/
+  .modal-body {
+    width: auto;
+  }
+  .modal-image {
+    left: 168px;
+  }
+
+  .small-modal-container {
+    width: 85%;
+  }
+  .small-modal-container .modal-content {
+    width: 100%;
+  }
+  .small-modal-container .modal-close-icon {
+    right: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .modal-slick .modal-content,
+  #job-desc-modal .modal-content {
+    flex-direction: column-reverse;
+  }
+  .modal-slick .modal-img {
+    width: auto;
+  }
+  .modal-slick .modal-body {
+    width: 70%;
+    margin: 0 auto 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal {
+    font-size: 14px;
+  }
+  #job-desc-modal .modal-container {
+    width: 75%;
+    left: -26px;
+  }
+  #job-desc-modal .modal-content {
+    padding: 65px 35px;
+    width: 92%;
+  }
+/*  .modal:target .modal-content {
+    width: 70vw;
+  }*/
+}
+
+@media (max-width: 746px) {
+  .modal-body {
+    width: 85%;
+  }
+  .modal-image {
+    width: 65%;
+    background-position: left;  }
+  .modal-gradient {
+    display: none;
+  }
+  .modal-slick .modal-content {
+    width: 80%;
+  }
+
+  .small-modal-container .modal-body {
+    width: auto;
+  }
+}
+
+@media (max-width: 610px) {
+  .modal-body h2 {
+    font-size: 35px;
+  }
+  .modal-body h3,
+  .modal-body .brand {
+    font-size: 20px;
+  }
+  .modal-slick .modal-body,
+  #job-desc-modal .modal-body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .modal-slick .modal-content {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .modal-body {
+    width: 100%;
+  }
+  .modal-image {
+    width: 80%;
+    left: 54px;
+  }
+}
+
+@media (max-width: 450px) {
+  /*.modal-body {
+    height: 530px;
+  }*/
+  .modal-body h2 {
+    font-size: 25px;
+  }
+  .modal-body h3,
+  .modal-body .brand {
+    line-height: 24px;
+    margin: 0 0 20px auto;
+  }
+  .modal-body p {
+    margin: 0 0 20px 0;
+  }
+  .modal-image {
+    width: 75%;
+    height: 200px;
+  }
+  .modal-image .btn {
+    float: none;
+    margin: 200px auto;
+  }
+
+  .modal-slick .modal-content {
+    width: 70%;
+  }
+  .modal-img div,
+  .modal-slick .modal-img {
+    height: 400px;
+  }
+  .modal-slick .modal-body {
+    height: auto;
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 325px) {
+  .modal-body p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+/*@supports (display: flex) {
+  @media (max-width: 767px) {
+    .modal:target .modal-content {
+      width: 70vw;
+    }
+  }
+}*/

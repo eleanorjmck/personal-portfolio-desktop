@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'leaguespartan-bold';
+    src: url('../fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('../fonts/leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'raleway-extra-bold';
+    src: url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/rraleway-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+body {
+	font-family: 'raleway-regular';
+	padding-top: 60px;
+	background-image: url(../images/background-pattern.jpg);
+	background-size: cover;
+	background-position: center 20%;
+	background-attachment: fixed;
+}
+/*.container {
+	width: 978px;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+h1 {
+	font-family: 'leaguespartan-bold';
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 52px;
+	line-height: 60px;
+}
+h1 .number {
+	font-size: 268px;
+	line-height: 268px;
+}
+h2 {
+	font-family: 'leaguespartan-bold';
+	text-transform: uppercase;
+	font-size: 50px;
+	color: #ff5661;
+}
+h2 span {
+	color: #5a18a9;
+}
+h3 {
+	font-family: 'leaguespartan-bold';
+	text-transform: uppercase;
+	font-size: 40px;
+	color: #5a18a9;
+}
+h3 span {
+	font-family: 'raleway-regular';
+	font-size: 60px;
+	line-height: 83px;
+	color: #ff5661;
+}	
+h4 {
+	font-family: 'raleway-regular';
+}
+p {
+	font-size: 16px;
+	line-height: 20px;
+	color: #353535;
+	margin: 20px 0 0 84px;
+}
+a {
+	text-decoration: none;
+}
+.btn {
+	color: #fff;
+	background-color: #ff5661;
+	display: block;
+	font-family: 'leaguespartan-bold';
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 15px;
+	float: left;
+	padding: 10px 30px;
+	transition: background .2s ease-in-out;
+}
+.btn:hover {
+	background-color: #ff2a6c;
+}
+
+/* NAVIGATION */
+.top {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	background-color: #fff;
+	z-index: 999;
+}
+.nav-text {
+	font-size: 16px;
+}
+nav {
+	max-width: 978px;
+	margin: 0 auto;
+	text-align: center;
+}
+nav a {
+	font-family: 'raleway-extra-bold';
+	font-size: 18px;
+	line-height: 60px;
+	color: #5a18a9;
+/*	width: 88px;
+*/	text-align: center;
+/*	float: left;
+*/	-webkit-transition: color .25s ease-in-out;
+ 	-moz-transition: color .25s ease-in-out;
+ 	-o-transition: color .25s ease-in-out;
+ 	transition: color .25s ease-in-out;
+}
+nav a:hover {
+	color: #ff2a6c;
+	-webkit-transition: color .25s ease-in-out;
+ 	-moz-transition: color .25s ease-in-out;
+ 	-o-transition: color .25s ease-in-out;
+ 	transition: color .25s ease-in-out;
+}
+nav a+a {
+	margin-left: 5.2%;
+}
+
+/* SIDEBAR NAV */
+#side-nav,
+.closebtn,
+.hide-show-nav {
+	display: none;
+}
+
+
+/* BANNER/INTRO */
+.banner {
+	background-image: url(../images/shoe-sketch.png);
+	background-position: right;
+	height: 829px;
+	background-repeat: no-repeat;
+}
+.title {
+/*	width: 978px;
+*/	margin: 0 auto;
+	padding: 50px 0 0 84px;
+}
+#intro .white-background {
+	height: 715px;
+	padding-top: 150px;
+}
+
+/* GENERAL BODY */
+.white-background {
+	width: 100%;
+	height: 613px;
+	background-color: #fff;
+	-ms-transform: skewY(21deg);
+ 	transform: skewY(21deg);
+	padding-top: 300px;
+}
+.white-background .content-text {
+	-ms-transform: skewY(-21deg);
+ 	transform: skewY(-21deg);
+}
+/*.intro-background {
+	width: 100%;
+	height: 613px;
+	background-color: #ccc;
+	-ms-transform: skewY(21deg);
+ 	transform: skewY(21deg);
+	padding-top: 300px;
+}
+*/
+/* PRINCIPLES */
+.shoe-image {
+	width: 810px;
+	height: 313px;
+	background-color: #ccc;
+	margin: 0 auto;
+	-ms-transform: skewY(21deg);
+ 	transform: skewY(21deg);
+ 	display: block;
+ 	background-size: cover;
+	background-position: center 20%;
+    overflow: hidden;
+}
+.shoe-image:before {
+	content: "";
+    -ms-transform: skewY(-21deg);
+ 	transform: skewY(-21deg);
+    background-repeat: no-repeat; 
+    background-position: top left; 
+    position: absolute;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 810px;
+    height: 625px;
+}
+.shoe-image:after {
+	content: '';
+	display: block;
+	position: absolute;
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	background: linear-gradient(132deg, rgba(255,86,97,0.5) 0%, rgba(255,42,108,0.5) 26%, rgba(90,24,169,0.5) 100%);
+	-webkit-transition: opacity .25s ease-in-out;
+ 	-moz-transition: opacity .25s ease-in-out;
+ 	-o-transition: opacity .25s ease-in-out;
+ 	transition: opacity .25s ease-in-out;
+}
+.shoe-image:hover:after {
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity .25s ease-in-out;
+ 	-moz-transition: opacity .25s ease-in-out;
+ 	-o-transition: opacity .25s ease-in-out;
+ 	transition: opacity .25s ease-in-out;
+}
+.shoe-image p {
+	opacity: 0;
+	position: absolute;
+}
+.shoe-image:hover p {
+	opacity: 1;
+	font-family: 'leaguespartan-bold';
+	text-transform: uppercase;
+	line-height: 310px;
+	color: #fff;
+	font-size: 40px;
+	position: absolute;
+	-ms-transform: skewY(-21deg);
+ 	transform: skewY(-21deg);
+ 	margin: 0 267px;
+ 	-webkit-transition: opacity .25s ease-in-out;
+ 	-moz-transition: opacity .25s ease-in-out;
+ 	-o-transition: opacity .25s ease-in-out;
+ 	transition: opacity .25s ease-in-out;
+ 	z-index: 999;
+}
+.shoe-image + .white-background {
+	width: 100%;
+	height: 613px;
+	background-color: #fff;
+	-ms-transform: skewY(21deg);
+ 	transform: skewY(21deg);
+	padding-top: 30px;
+}
+.shoe-image + .white-background .content-text {
+	-ms-transform: skewY(-21deg);
+ 	transform: skewY(-21deg);
+}
+
+/* INDIVIDUAL SHOES */
+#innovative .shoe-image:before {
+	background-image: url(../images/innovative-shoe.png);
+}
+#useful .shoe-image:before {
+    background-image: url(../images/useful-shoe.png);
+}
+#aesthetic .shoe-image:before {
+	background-image: url(../images/aesthetic-shoe.png);
+}
+#understandable .shoe-image:before {
+    background-image: url(../images/understandable-shoe.png);
+}
+#unobtrusive .shoe-image:before {
+	background-image: url(../images/unobtrusive-shoe.png);
+}
+#honest .shoe-image:before {
+	background-image: url(../images/honest-shoe.png);
+}
+#longlasting .shoe-image:before {
+    background-image: url(../images/longlasting-shoe.png);
+}
+#thorough .shoe-image:before {
+	background-image: url(../images/thorough-shoe.png);
+}
+#environmental .shoe-image:before {
+    background-image: url(../images/environmental-shoe.png);
+}
+#minimal .shoe-image:before {
+	background-image: url(../images/minimal-shoe.png);
+}
+.content-text {
+	width: 474px;
+	margin: 0 auto;
+}
+
+/* FOOTER */
+.footer {
+	height: 350px;
+	max-width: 978px;
+	margin: 0 auto;
+	background-image: url(../images/shoe-sketch-flip.png);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+/*.footer:before {
+	content: '';
+	display: block;
+	position: absolute;
+	background-image: url(../images/shoe-sketch.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	height: 100%;
+}*/
+.footer p {
+	font-family: 'leaguespartan-bold';
+	text-transform: uppercase;
+	color: #fff;
+	margin: 10px 0 0 0;
+}
+.footer p span {
+	color: #ffc200;
+}
+.footer .small-text {
+	font-family: 'raleway-regular';
+	text-transform: none;
+	font-size: 16px;
+	max-width: 290px;
+}
+.sign-up,
+.social {
+	margin-left: 95px;
+}
+.social {
+	margin-top: 100px;
+}
+.social-icons {
+	margin: 15px auto;
+	height: 40px;
+}
+.social-icons a + a {
+	margin-left: 10px;
+}
+.facebook,
+.instagram,
+.twitter {
+	background-image: url(../images/social-icons.png);
+	width: 40px;
+  	height: 40px;
+ 	background-repeat: no-repeat;
+ 	display: block;
+ 	float: left;
+ 	-webkit-transition: opacity .25s ease-in-out;
+ 	-moz-transition: opacity .25s ease-in-out;
+ 	-o-transition: opacity .25s ease-in-out;
+ 	transition: opacity .25s ease-in-out;
+ }
+ .facebook:before,
+ .instagram:before,
+ .twitter:before {
+ 	content: "";
+	background-image: url(../images/social-icons.png);
+	width: 40px;
+  	height: 40px;
+ 	background-repeat: no-repeat;
+ 	position: absolute;
+ }
+.facebook {
+	background-position: left -40px;
+}
+.instagram {
+	background-position: center -40px;
+}
+.twitter {
+	background-position: right -40px;
+}
+.facebook:before {
+	background-position: left 0px;
+}
+.instagram:before {
+	background-position: center 0px;
+}
+.twitter:before {
+	background-position: right 0px;
+}
+.facebook:hover:before,
+.instagram:hover:before,
+.twitter:hover:before {
+	opacity: 0;
+	-webkit-transition: opacity .25s ease-in-out;
+ 	-moz-transition: opacity .25s ease-in-out;
+ 	-o-transition: opacity .25s ease-in-out;
+ 	transition: opacity .25s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
